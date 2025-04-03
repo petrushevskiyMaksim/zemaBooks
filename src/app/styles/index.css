@@ -1,0 +1,44 @@
+/* @import './reset.css'; */
+@import 'normalize.css';
+@import './fonts.css';
+@import 'tailwindcss';
+
+@theme {
+	--font-main: 'Open Sans', 'sans-serif';
+	--font-title: 'Raleway', 'sans-serif';
+	--font-subtitle: 'Cormorant Garamond', 'sans-serif';
+	--color-main: rgb(193, 174, 142);
+	--color-secondary: rgb(202, 154, 78);
+}
+
+html {
+	@apply scroll-smooth; /* Плавный скролл */
+}
+
+body {
+	@apply font-main text-main text-[16px] leading-[1.5] bg-[#0a0202];
+}
+
+h1 {
+	@apply font-title text-secondary text-[46px];
+}
+
+h2 {
+	@apply font-subtitle text-secondary text-[36px];
+}
+
+.wrapper {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	@apply flex-grow;
+}
+
+.container {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
